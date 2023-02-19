@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>668</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>30</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>KİTAP EKLE</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>120</y>
+      <width>131</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_isim_kitap_ekle">
+       <property name="text">
+        <string>İSİM</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_yazar_kitap_ekle">
+       <property name="text">
+        <string>YAZAR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_katagori_kitap_ekle">
+       <property name="text">
+        <string>KATAGORİ</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>110</y>
+      <width>161</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_isim_kitap_ekle"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_yazar_kitap_ekle"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_katagori_kitap_ekle">
+       <item>
+        <property name="text">
+         <string>Tarihi</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Macera</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Aksiyon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Durağan</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ekle_kitap_ekle">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>340</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>EKLE</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>668</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuKitaplar">
+    <property name="title">
+     <string>kitaplar</string>
+    </property>
+    <addaction name="actionOkunan_Kitaplar"/>
+    <addaction name="actionOkunmayan_Kitaplar"/>
+   </widget>
+   <addaction name="menuKitaplar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOkunan_Kitaplar">
+   <property name="text">
+    <string>Okunan Kitaplar</string>
+   </property>
+  </action>
+  <action name="actionOkunmayan_Kitaplar">
+   <property name="text">
+    <string>Okunmayan Kitaplar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
